@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/83decb21-258d-425d-a8ac-4c98c4512f05-shutterstock-1128225152\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%; /* Allow the logo to resize based on screen size */
+    height: auto;
+}
+.logo img{
+    position: relative;
+}
+
+.body h1{
+    color: white;
+    text-shadow: -1px -1px brown, 1px -1px 0 brown, -1px 1px 0 brown, 1px 1px 0 brown;
+    font-size: 4rem;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    /* top: 20px; */
+    font-size: 30px;
+    font-weight: 600;
+}
+.button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(222, 184, 135);
+    border: 2px solid gray;
+    font-weight: 800;
+}
+
+h1 .button{
+    top: 70px;
+    left: -300px;
+}
+
+h2{
+    color: white;
+    text-shadow: -1px -1px brown, 1px -1px 0 brown, -1px 1px 0 brown, 1px 1px 0 brown;
+    font-size: 3rem;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+h2 span{
+    display: block;
+}
+h2 button{
+    /* right: 0px; */
+    display: block;
+    left: 60%;
+    width: 140px;
+    height: 33.73px;
+    font-size: 26.25px;
+    /* top: 70px; */
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 767px) {
+    .body h1 {
+        font-size: 2rem;
+        top: 15%;
+    }
+    h2 {
+        font-size: 1.5rem;
+        top: 60%;
+        right: 5%;
+    }
+    h1 .button{
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h2 button {
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+  }
