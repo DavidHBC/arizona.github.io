@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Apply the font to specific elements */
+/* body {
+  /* font-family: 'ABeeZee', sans-serif; *
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(195, 157, 108); */
+    background-color: white;
+    overflow-x: hidden;
+    /* color: white; */
+    color: brown;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    /* background-color: rgb(195, 157, 108); */
+    background-color: white;
+    top: 0;
+    /* border-bottom: 2px solid black; */
+    display: flex;
+    box-shadow: 10px 0 12px -7px rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    position: relative;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    /* border-right: 1px solid black; */
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end; /* Change from 'space-between' to 'flex-end' */
+    float: right;
+    width: 65%; /* Reduce the width to make space for the links */
+    font-size: 1.7rem;
+}
+
+.links li {
+    text-decoration: none;
+    margin-right: 50px; /* Add margin to create space between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.fas{
+    color: white;
+    /* color: brown; */
+    /* background-color: white; */
+}
+
+.links div {
+    display: inline-block;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    padding: 5px 10px; /* Optional: Add some padding inside the box */
+    margin-right: 50px;
+    /* background-color: burlywood; */
+    background-color: brown;
+
+}
+
+.offer {
+    width: 100vw;
+    height: 33%;
+    /* background-color: red; */
+    display: block;
+}
+
+.offer h1{
+    /* color: white; */
+    color: brown;
+    font-size: 3rem;
+    /* margin-left: 70px; */
+    margin: 70px;
+}
+.offer button {
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 70%;
+    transform: translateX(-50%);
+    /* top: -50px; */
+    /* background-color: burlywood; */
+    background-color: brown;
+    display: inline-block;
+}
+.offer button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    border: 1px solid white;
+}
+
+.explore-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.explore-button-wrapper button {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+}
+
+.explore-button-wrapper button:hover {
+    background-color: burlywood;
+    border: 1px solid white;
+}
+
+
+#blue{
+    padding: 5px 10px 15px 10px; /* Optional: Add some padding inside the box */
+    /* background-color: burlywood; */
+    position: relative;
+    top: 100px;
+    text-decoration: underline;
+    border-radius: 8px;
+    /* margin-left: 48%; */
+    font-size: 2rem;
+    transform: scaleX(1.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: fit-content; */
+
+
+}
+
+.sticky {
+    margin-left: 27%;
+    position: fixed;
+    font-size: 1.5rem;
+    bottom: 50px;
+    /* background-color: burlywood; */
+    background-color: brown;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 5px 10px;
+    z-index: 100;
+}
+
+.tote-bags{
+    width: 100vw;
+    height: 75vh;
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+    box-sizing: border-box; /*Add box-sizing property */
+    top: 150px;
+
+}
+
+.tote-bags div{
+    display: flex;
+    position: relative;
+    /* max-height: 400px; */
+    height: 100%;
+    
+}
+
+.tote-bags .image{
+    flex: 1.5;
+    /* background-color: red ; */
+    border: 1px solid black;
+    height: 100%;
+    font-size: 5rem;
+    /* padding-top: 15px; */
+    text-align: center;
+}
+
+.tote-bags .text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+}
+
+.tote-bags .text h1{
+    position: absolute;
+    top: 0;
+    font-size:3rem;
+}
+.tote-bags  .text p{
+    /* color: white; */
+    color: brown;
+    /* text-align: center; */
+    font-size: 2rem;
+    display: flex;
+    padding: 15px;
+    line-height: 3.5rem;
+    position: relative;
+    top: 20%;
+    font-weight: 500; 
+}
+.tote-btn{
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    /* left: 70%; */
+    /* transform: translateX(-50%); */
+    /* top: -50px; */
+    /* background-color: burlywood; */
+    background-color: brown;
+    right: 20%;
+    
+}
+
+.tie-dye{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+    box-sizing: border-box; /*Add box-sizing property */
+    top: 300px;
+}
+.tie-dye div{
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+    flex-direction: row;
+}
+.tie-dye .text{
+    flex: 1;
+    justify-content: center;
+    /* background-color: red;    */
+}
+.tie-dye h1{
+    font-size:3rem;
+    padding-left: 15px;
+    display: block;
+}
+.tie-dye p{
+    padding-left: 15px;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+    top: 10%;
+    /* left: 0; */
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+.tie-dye span{
+    font-weight: 900;
+    color: brown;
+    /* transform: scaleX(2.5); */
+
+} 
+
+#typewriter-text {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
+  
+#changing-word {
+    display: inline;
+    color: brown; /* Customize the color of the changing word */
+}
+  
+#blinking-cursor {
+    display: inline;
+    animation: blink 0.8s infinite;
+    color: brown; /* Customize the color of the blinking cursor */
+}
+
+.tie-dye-btn{
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    
+    /* transform: translateX(-50%); */
+    /* background-color: burlywood; */
+    background-color: brown;
+    z-index: -10000%;
+    /* right: 35%; */
+    left: 10%;
+}
+
+.tie-dye .image{
+    flex: 1.5;
+    background-color: gray ;
+    border: 1px solid black;
+    height: 100%;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.contact-page{
+    width: 100%;
+    background-color: brown;
+    color: white;
+    height: 280px;
+    position: relative;
+    top: 450px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-page > h1{
+    /* position: absolute; */
+    bottom: 15px;
+    /* left: 15px; */
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 900;
+    
+}
+.contact-page a{
+    text-decoration: none;
+}
+
+.we-offer{
+    width: 400px;
+    height: auto;
+    /* position: absolute; */
+    bottom: 15px;
+    /* left: 40%; */
+}
+.we-offer h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.we-offer-list {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    position: relative;
+    /* top: 15px; */
+}
+
+
+.connect{
+    width: 250px;
+    height: auto;
+    /* position: absolute; */
+    /* right: 50px; */
+    bottom: 15px;
+}
+.connect h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 15px;
+    /* background-color: white; */
+}
+.fab{
+    color: brown;
+}
+.social-icons > div{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.connect h2{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 30px;
+}
+.connect p{
+    font-size: 20px;
+}

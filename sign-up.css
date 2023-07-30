@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+  
+.logo {
+    width: 60vw;
+    /* flex: 1; */
+    /* background-color: blue; */
+    background-image: url(../img/pexels-alexander-grey-4048389.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: burlywood;
+}
+.logo div{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(../img/IMG-20230720-WA0008.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sign-in {
+    width: 40vw;
+    /* flex: 1; */
+    min-height: 100vh; /* Adjust the minimum height as needed */
+    overflow-y: auto;
+    /* background-color: red; */
+    color: burlywood;
+    overflow-x: hidden;
+}
+
+.sign-in p{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 28px;
+    font-size: 2rem;
+    color: rgb(172, 142, 103);
+}
+
+.sign-in div input{
+    width: 90%;
+    height: 2.5rem;
+    display: block;
+    position: relative;
+    left: 5%;
+    top: 65px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    /* padding-left: 1%;  needed if text is aligned to the left */
+    text-align: center;
+}
+
+/* .sign-in span{
+    position: relative;
+    left: 5%;
+    font-size: 1.2rem;
+}
+.fname{
+    top: 57px;
+}
+
+.lname{
+    top:82px;
+}
+.password{
+        top: 102px;
+    }
+ */
+    
+#lname{
+    top:95px;
+}
+#password{
+    top: 125px;
+}
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    top: 254px;
+    right: 90px;
+    color: grey;
+    cursor: pointer;
+}
+
+.google{
+    border: 2px solid burlywood;
+    height: 3rem;
+    text-align: center;
+    color: blue;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.google:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.google span{
+    font-size: 1.5rem;
+}
+.mr-2{
+    font-size: 1.4rem;
+    margin-right: 10px;
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+.password-des{
+    position: relative;
+    top: 140px;
+    left: 5%;
+    font-size: 16.5px;
+    color: brown;
+}
+
+#terms, .sign-in form > span{
+    position: relative;
+    top: 230px;
+    left: 5%;
+    font-size: 18.5px;
+    color: brown;
+}
+
+.sign-in hr{
+    position: relative;
+    top: 166px;
+    width: 40%;
+    left: 5%;
+}
+.or{
+    position: relative;
+    top: 152px;
+    left: 7%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 3rem;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: brown;
+
+    color: white;
+    /* top: 20px; */
+    font-size: 1.3rem;
+    left: 5%;
+    top: 270px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.sign-in .login{
+    position: relative;
+    left: 5%;
+    top: 285px;
+    justify-content: left;
+    font-size: 18.5px;
+    color: brown;
+}
+.login a{
+    margin-left: 10px;
+}

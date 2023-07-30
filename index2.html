@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typewriter Animation</title>
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 4rem;
+}
+
+#typewriter-text {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+}
+
+#changing-word {
+  display: inline;
+  color: #007bff; /* Customize the color of the changing word */
+}
+
+#blinking-cursor {
+  display: inline;
+  animation: blink 0.8s infinite;
+  color: #007bff; /* Customize the color of the blinking cursor */
+}
+/* 
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+} */
+
+    </style>
+</head>
+<body>
+    <div id="typewriter-text">Kossy is <span id="changing-word"></span><span id="blinking-cursor">|</span></div>
+    <script src="./js/anim.js"></script>
+</body>
+</html>
