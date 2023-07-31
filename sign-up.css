@@ -14,7 +14,7 @@ body {
     width: 60vw;
     /* flex: 1; */
     /* background-color: blue; */
-    background-image: url(pexels-alexander-grey-4048389.jpg);
+    background-image: url(../img/pexels-alexander-grey-4048389.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
     height: 300px;
     background-color: white;
     border-radius: 50%;
-    background-image: url(IMG-20230720-WA0008.jpg);
+    background-image: url(../img/IMG-20230720-WA0008.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,4 +193,26 @@ body {
 }
 .login a{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .logo{
+        display: none;
+    }
+    .sign-in{
+        width: 100vw;
+    }
+    .password-des{
+        /* display: flex; */
+        font-size: 15px;
+        white-space: normal;
+    }
+    #terms, .sign-in form > span{
+        font-size: 16px;
+        margin-right: 5%;
+        
+    }
+    .sign-in form > span{
+        left: 2%;
+    }
 }
