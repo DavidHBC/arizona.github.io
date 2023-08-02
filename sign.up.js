@@ -56,7 +56,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
 if (isEmailValid && fname && termsChecked) {
     // Create a new anchor element
     const anchorElement = document.createElement('a');
-    anchorElement.href = '';
+    anchorElement.href = 'homePage.html';
     anchorElement.innerText = 'Continue to Website';
     anchorElement.classList.add('signup-link'); // Add a class to the anchor element
 
