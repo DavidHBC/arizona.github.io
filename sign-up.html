@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Page</title>
-    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="./css/sign-up.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
     <section class="logo">
         <div>
-            <!-- <img src="IMG-20230720-WA0008.jpg" alt="" style="width: 100%; height: 100%;"> -->
+            <!-- <img src="./img/IMG-20230720-WA0008.jpg" alt="" style="width: 100%; height: 100%;"> -->
         </div>
 
     </section>
@@ -28,7 +28,7 @@
                 <input type="password" name="password" id="password" placeholder="Password">
                 <i class="fas fa-eye" id="togglePassword"></i>
 
-                <span class="password-des">Use at least 8 characters with a mix of letters, numbers and symbols</span>
+                <span class="password-des">Use at least 8 characters with a mix of letters, <br> numbers and symbols</span>
 
                 <div class="google">
                     <img class="w-[28px] mr-2" src="https://playtht-website-assets.s3.amazonaws.com/img/brand/google.svg" alt="icon">
@@ -39,7 +39,10 @@
             <input type="checkbox" name="terms" id="terms">
             <span>Agree to our <a href="">Terms of use</a> and <a href="">Privacy policy</a></span>
             
-            <button class="signup button" id="signup-form">Sign-Up</button>
+            <button class="signup button" id="signup-form">
+                <!-- <a href="./homePage.html" id="signup-anchor">Sign-Up</a> -->
+                Sign Up
+            </button>
         </form>
         
         <p class="login">Already have an account?   <a href=""> Login</a></p>
@@ -47,7 +50,7 @@
 
     </section>
 
-    
-   <script src="sign.up.js"></script>   
+
+   <script src="./js/sign.up.js"></script>   
 </body>
 </html>

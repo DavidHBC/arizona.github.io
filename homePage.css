@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    min-height: 100vh;
+    height: auto;
     width: 100vw;
     /* background-color: rgb(195, 157, 108); */
     background-color: white;
@@ -91,17 +91,17 @@ nav a{
 
 .offer {
     width: 100vw;
-    height: 33%;
-    /* background-color: red; */
+    height: auto;
     display: block;
+    position: relative;
+    margin-top:  5%;
 }
 
 .offer h1{
-    /* color: white; */
     color: brown;
     font-size: 3rem;
-    /* margin-left: 70px; */
-    margin: 70px;
+    margin-left: 10%;
+    position: relative;
 }
 .offer button {
     padding: 5px 10px;
@@ -111,10 +111,8 @@ nav a{
     border-radius: 10px;
     border: none;
     position: relative;
+    margin-top: 3%;
     left: 70%;
-    transform: translateX(-50%);
-    /* top: -50px; */
-    /* background-color: burlywood; */
     background-color: brown;
     display: inline-block;
 }
@@ -124,52 +122,21 @@ nav a{
     border: 1px solid white;
 }
 
-.explore-button-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.explore-button-wrapper button {
-    cursor: pointer;
-    padding: 5px 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 2rem;
-    border-radius: 10px;
-    border: none;
-    background-color: brown;
-}
-
-.explore-button-wrapper button:hover {
-    background-color: burlywood;
-    border: 1px solid white;
-}
-
-
+/* Explore button that takes you to the first section */
 #blue{
-    padding: 5px 10px 15px 10px; /* Optional: Add some padding inside the box */
-    /* background-color: burlywood; */
     position: relative;
-    top: 100px;
+    width: 100%;
+    margin-top: 7%;
     text-decoration: underline;
-    border-radius: 8px;
-    /* margin-left: 48%; */
     font-size: 2rem;
-    transform: scaleX(1.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /* height: fit-content; */
-
-
 }
+
 
 .sticky {
-    margin-left: 27%;
+    margin-left: 25%;
     position: fixed;
     font-size: 1.5rem;
     bottom: 50px;
@@ -177,123 +144,139 @@ nav a{
     background-color: brown;
     color: whitesmoke;
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 5px 1px;
     z-index: 100;
+    width: 50%;
+    text-align: center;
 }
+
+/* Tote Bag Section */
 
 .tote-bags{
     width: 100vw;
-    height: 75vh;
-    /* background-color: blue; */
+    height: auto;
     display: flex;
     position: relative;
-    box-sizing: border-box; /*Add box-sizing property */
-    top: 150px;
-
+    box-sizing: border-box; 
+    margin-top: 10%;
+    background-color: red;
 }
 
 .tote-bags div{
     display: flex;
     position: relative;
-    /* max-height: 400px; */
     height: 100%;
     
 }
 
 .tote-bags .image{
     flex: 1.5;
-    /* background-color: red ; */
     border: 1px solid black;
     height: 100%;
     font-size: 5rem;
-    /* padding-top: 15px; */
-    text-align: center;
 }
 
 .tote-bags .text{
-    display: flex;
     flex: 1;
-    justify-content: center;
-    
+    display: block;    
 }
 
 .tote-bags .text h1{
-    position: absolute;
-    top: 0;
+    position: relative;
     font-size:3rem;
+    text-align: center;
 }
 .tote-bags  .text p{
-    /* color: white; */
-    color: brown;
-    /* text-align: center; */
-    font-size: 2rem;
-    display: flex;
-    padding: 15px;
-    line-height: 3.5rem;
     position: relative;
-    top: 20%;
+    display: block;
+    color: brown;
+    font-size: 2rem;
+    margin-left: 1%;
+    white-space: normal;
+    line-height: 3.5rem;
+    margin-top: 4%;
     font-weight: 500; 
 }
+
+
 .tote-btn{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 4%;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    left: 50%;
+}
+
+/* Tie and Dye Section */
+
+.tie-dye{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 9%;
+}
+.tie-dye div{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.tie-dye .text{
+    flex: 1;
+    display: block;
+}
+.tie-dye .image{
+    flex: 1.5;
+    background-color: gray ;
+    border: 1px solid black;
+    height: 100%;
+    font-size: 5rem;
+    text-align: center;
+}
+.tie-dye h1{
+    font-size:3rem;
+    margin-left: 5%;
+    display: block;
+    
+}
+.tie-dye p{
+    margin-left: 5%;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+    margin-top: 4%;
+    line-height: 3.5rem;
+    font-weight: 500;
+    white-space: normal;
+}
+.tie-dye-btn{
     padding: 5px 10px;
     color: white;
     font-weight: 600;
     font-size: 2rem;
     border-radius: 10px;
     border: none;
-    position: absolute;
-    bottom: 0;
-    /* left: 70%; */
-    /* transform: translateX(-50%); */
-    /* top: -50px; */
-    /* background-color: burlywood; */
+    position: relative;
     background-color: brown;
-    right: 20%;
-    
+    left: 15%;
+    margin-top: 4%;   
 }
 
-.tie-dye{
-    width: 100vw;
-    height: 80vh;
-    /* background-color: blue; */
-    display: flex;
-    position: relative;
-    box-sizing: border-box; /*Add box-sizing property */
-    top: 300px;
-}
-.tie-dye div{
-    /* display: flex; */
-    position: relative;
-    height: 100%;
-    flex-direction: row;
-}
-.tie-dye .text{
-    flex: 1;
-    justify-content: center;
-    /* background-color: red;    */
-}
-.tie-dye h1{
-    font-size:3rem;
-    padding-left: 15px;
-    display: block;
-}
-.tie-dye p{
-    padding-left: 15px;
-    font-size: 2rem;
-    display: block;
-    position: relative;
-    top: 10%;
-    /* left: 0; */
-    line-height: 3.5rem;
-    font-weight: 500;
-}
+/* Changing Text */
+
 .tie-dye span{
     font-weight: 900;
     color: brown;
     /* transform: scaleX(2.5); */
-
 } 
-
 #typewriter-text {
     display: inline-block;
     padding: 10px;
@@ -312,51 +295,26 @@ nav a{
     color: brown; /* Customize the color of the blinking cursor */
 }
 
-.tie-dye-btn{
-    padding: 5px 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 2rem;
-    border-radius: 10px;
-    border: none;
-    position: absolute;
-    bottom: 0;
-    
-    /* transform: translateX(-50%); */
-    /* background-color: burlywood; */
-    background-color: brown;
-    z-index: -10000%;
-    /* right: 35%; */
-    left: 10%;
-}
-
-.tie-dye .image{
-    flex: 1.5;
-    background-color: gray ;
-    border: 1px solid black;
-    height: 100%;
-    font-size: 5rem;
-    text-align: center;
-}
+/* Contact Page */
 
 .contact-page{
     width: 100%;
     background-color: brown;
     color: white;
-    height: 280px;
+    height: auto;
     position: relative;
-    top: 450px;
+    margin-top: 10%;
     z-index: 1000;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .contact-page > h1{
-    /* position: absolute; */
-    bottom: 15px;
-    /* left: 15px; */
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
     text-decoration: underline;
     font-size: 2rem;
     font-weight: 900;
@@ -367,16 +325,15 @@ nav a{
 }
 
 .we-offer{
-    width: 400px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 30%;
     height: auto;
-    /* position: absolute; */
-    bottom: 15px;
-    /* left: 40%; */
+    
 }
 .we-offer h1{
     font-size: 2rem;
     font-weight: 900;
-    margin-bottom: 20px;
 }
 .we-offer-list {
     list-style: none;
@@ -386,34 +343,32 @@ nav a{
     grid-template-columns: 50% 50%;
     gap: 10px;
     position: relative;
-    /* top: 15px; */
 }
 
-
 .connect{
-    width: 250px;
+    width: 30%;
     height: auto;
-    /* position: absolute; */
-    /* right: 50px; */
-    bottom: 15px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background-color: red;
 }
 .connect h1{
     font-size: 2rem;
     font-weight: 900;
+    display: block;
 }
 .social-icons{
     display: flex;
-    justify-content: space-between;
     font-size: 2rem;
     color: white;
     position: relative;
-    top: 15px;
-    /* background-color: white; */
+    margin-top: 5%;
 }
 .fab{
-    color: brown;
+    color: brown; 
 }
 .social-icons > div{
+    margin-right: 5%;
     padding: 5px 10px;
     background-color: white;
     border-radius: 10px;
@@ -421,8 +376,10 @@ nav a{
 .connect h2{
     font-size: 2rem;
     font-weight: 900;
-    margin-top: 30px;
+    margin-top: 4%;
 }
 .connect p{
+    margin-top: 1%;
     font-size: 20px;
+    line-height: 1.8rem;
 }

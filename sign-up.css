@@ -12,9 +12,9 @@ body {
   
 .logo {
     width: 60vw;
-    /* flex: 1; */
-    /* background-color: blue; */
-    background-image: url(pexels-alexander-grey-4048389.jpg);
+    
+    background-color: brown;
+    background-image: url(../img/pexels-alexander-grey-4048389.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
     height: 300px;
     background-color: white;
     border-radius: 50%;
-    background-image: url(IMG-20230720-WA0008.jpg);
+    background-image: url(../img/IMG-20230720-WA0008.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,11 +36,10 @@ body {
 
 .sign-in {
     width: 40vw;
-    /* flex: 1; */
     min-height: 100vh; /* Adjust the minimum height as needed */
-    overflow-y: auto;
+    overflow-y:hidden;
     /* background-color: red; */
-    color: burlywood;
+    color: brown;
     overflow-x: hidden;
 }
 
@@ -51,7 +50,7 @@ body {
     position: relative;
     top: 28px;
     font-size: 2rem;
-    color: rgb(172, 142, 103);
+    color: brown(172, 142, 103);
 }
 
 .sign-in div input{
@@ -61,29 +60,13 @@ body {
     position: relative;
     left: 5%;
     top: 65px;
-    border: 2px solid burlywood;
+    border: 2px solid brown;
     border-radius: 10px;
     font-size: 1.2rem;
     /* padding-left: 1%;  needed if text is aligned to the left */
     text-align: center;
 }
 
-/* .sign-in span{
-    position: relative;
-    left: 5%;
-    font-size: 1.2rem;
-}
-.fname{
-    top: 57px;
-}
-
-.lname{
-    top:82px;
-}
-.password{
-        top: 102px;
-    }
- */
     
 #lname{
     top:95px;
@@ -117,6 +100,7 @@ body {
     background-color: blue;
     color: white;
     cursor: pointer;
+    border: 2px solid gray;
 }
 
 .google span{
@@ -133,8 +117,10 @@ body {
     position: relative;
     top: 140px;
     left: 5%;
-    font-size: 16.5px;
+    font-size: 22px;
     color: brown;
+    white-space: normal;
+    margin-right: 5%;
 }
 
 #terms, .sign-in form > span{
@@ -159,7 +145,7 @@ body {
     font-weight: 600;
 }
 
-.button{
+.button, .signup-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,11 +163,31 @@ body {
     top: 270px;
     font-weight: 700;
 }
+.button a{
+    text-decoration: none;
+    color: white;
+}
 
 .button:hover{
     background-color: burlywood;
     cursor: pointer;
 }
+
+/* -----break----- */
+.signup-link {
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+/* -----break----- */
+
+
 
 .sign-in .login{
     position: relative;
@@ -190,6 +196,7 @@ body {
     justify-content: left;
     font-size: 18.5px;
     color: brown;
+    text-decoration: none;
 }
 .login a{
     margin-left: 10px;
@@ -199,12 +206,15 @@ body {
     .logo{
         display: none;
     }
+    input{
+        height: 1.5rem;
+    }
     .sign-in{
         width: 100vw;
     }
     .password-des{
         /* display: flex; */
-        font-size: 15px;
+        font-size: 16px;
         white-space: normal;
     }
     #terms, .sign-in form > span{
