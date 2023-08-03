@@ -102,19 +102,31 @@ nav a{
     font-size: 3rem;
     margin-left: 10%;
     position: relative;
+    white-space: normal;
+    margin-right: 5%;
+    /* background-color: black; */
+}
+.explore-btn{
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 3%;
+}
+.explore-btn a{
+    text-decoration: none;
 }
 .offer button {
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: white;
     font-weight: 600;
     font-size: 2rem;
     border-radius: 10px;
     border: none;
     position: relative;
-    margin-top: 3%;
-    left: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: 20%;
     background-color: brown;
-    display: inline-block;
 }
 .offer button:hover{
     cursor: pointer;
@@ -159,10 +171,10 @@ nav a{
     position: relative;
     box-sizing: border-box; 
     margin-top: 10%;
-/*     background-color: red; */
+    /* background-color: red; */
 }
 
-.tote-bags div{
+.tote-bags > div{
     display: flex;
     position: relative;
     height: 100%;
@@ -198,19 +210,25 @@ nav a{
     font-weight: 500; 
 }
 
-
-.tote-btn{
+.tote-btn-ctn{
     position: relative;
-    width: 200px;
-    height: 50px;
+    display: flex;
     margin-top: 4%;
+    width: 100%;
+}
+.tote-btn{
+    /* position: relative; */
+    /* width: 200px;
+    height: 50px; */
+    padding: 10px 10px;
     color: white;
     font-weight: 600;
     font-size: 2rem;
     border-radius: 10px;
     border: none;
     background-color: brown;
-    left: 50%;
+    margin-left: auto;
+    margin-right: 10%;
 }
 
 /* Tie and Dye Section */
@@ -256,9 +274,10 @@ nav a{
     line-height: 3.5rem;
     font-weight: 500;
     white-space: normal;
+    white-space: normal;
 }
 .tie-dye-btn{
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: white;
     font-weight: 600;
     font-size: 2rem;
@@ -266,7 +285,7 @@ nav a{
     border: none;
     position: relative;
     background-color: brown;
-    left: 15%;
+    margin-left: 10%;
     margin-top: 4%;   
 }
 
@@ -350,7 +369,8 @@ nav a{
     height: auto;
     margin-top: 5%;
     margin-bottom: 2%;
-/*     background-color: red; */
+    margin-right: 2%;
+
 }
 .connect h1{
     font-size: 2rem;
@@ -382,4 +402,100 @@ nav a{
     margin-top: 1%;
     font-size: 20px;
     line-height: 1.8rem;
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    .offer h1{
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+    .offer button{
+        font-size: 16px;
+        margin-right: 15%;
+    }
+    #blue{
+        font-size: 1.2rem;
+    }
+    .sticky{
+        display: none;
+    }
+    .tote-bags{
+        flex: 1;
+    }
+    .tote-bags .image{
+        display: none;
+    }
+    .tote-bags .text h1{
+        font-size: 2rem;
+    }
+    .tote-bags .text p{
+        font-size: 1rem;
+        line-height: 20px;
+        margin-left: 2%;
+    }
+    .tote-btn{
+        font-size: 1rem;
+    }
+
+    .tie-dye{
+        flex: 1;
+    }
+    .tie-dye .image{
+        display: none;
+    }
+    .tie-dye .text h1{
+        font-size: 2rem;
+        white-space: normal;
+    }
+    .tie-dye .text p{
+        font-size: 1rem;
+        line-height: 20px;
+        margin-left: 2%;
+    }
+    .tie-dye-btn{
+        font-size: 1rem;
+    }
+    .contact-page{
+        display: block;
+    }
+    .contact-page > h1{
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .we-offer{
+        margin-left: 5%;
+    }
+    .we-offer h1{
+        font-size: 1rem;
+    }
+    .we-offer-list {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .connect{
+        margin-left: 5%;
+    }
+    .connect h1{
+        font-size: 1rem;
+    }
+    .social-icons{
+        font-size: 1rem;
+    }
+    
+    .connect h2{
+        font-size: 1rem;
+    }
+    .connect p{
+        margin-top: 1%;
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
 }
