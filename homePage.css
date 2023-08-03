@@ -96,7 +96,9 @@ nav a{
     position: relative;
     margin-top:  5%;
 }
-
+.offer a{
+    text-decoration: none;
+}
 .offer h1{
     color: brown;
     font-size: 3rem;
