@@ -46,3 +46,15 @@ window.onload = function () {
     typeWriter();
     blinkCursor();
 };
+
+// Hamburger
+
+const ham = document.querySelector(".hamburger")
+const links = document.querySelector(".links")
+
+ham.addEventListener("click", () => {
+    ham.classList.toggle("active");
+    links.classList.toggle("active");  
+})
+
+

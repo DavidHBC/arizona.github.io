@@ -30,14 +30,14 @@ nav{
     width: 100%;
     height: 10vh;
     position: sticky;
-    /* background-color: rgb(195, 157, 108); */
     background-color: white;
     top: 0;
-    /* border-bottom: 2px solid black; */
     display: flex;
     box-shadow: 10px 0 12px -7px rgba(0, 0, 0, 0.9);
-    z-index: 1000;
+    justify-content: space-between;
     color: white;
+    z-index: 1000; /* Important */
+    align-items: center;
 }
 
 nav a{
@@ -50,22 +50,27 @@ nav a{
     left: 0;
     height: 100%;
     width: 35%;
-    /* border-right: 1px solid black; */
+}
+.logo img{
+    width: 80%; 
+    height: 300%; 
+    position: relative;  
+    top: -60px;
 }
 
 .links {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: flex-end; /* Change from 'space-between' to 'flex-end' */
+    justify-content: flex-end; 
     float: right;
-    width: 65%; /* Reduce the width to make space for the links */
+    /* width: 65%;  */
     font-size: 1.7rem;
 }
 
 .links li {
     text-decoration: none;
-    margin-right: 50px; /* Add margin to create space between links */
+    margin-right: 50px; 
     list-style: none;
     margin: 0;
     padding: 0;
@@ -74,17 +79,13 @@ nav a{
 
 .fas{
     color: white;
-    /* color: brown; */
-    /* background-color: white; */
 }
 
 .links div {
     display: inline-block;
-    /* border: 2px solid black; */
     border-radius: 8px;
-    padding: 5px 10px; /* Optional: Add some padding inside the box */
+    padding: 5px 10px; 
     margin-right: 50px;
-    /* background-color: burlywood; */
     background-color: brown;
 
 }
@@ -96,9 +97,7 @@ nav a{
     position: relative;
     margin-top:  5%;
 }
-.offer a{
-    text-decoration: none;
-}
+
 .offer h1{
     color: brown;
     font-size: 3rem;
@@ -146,6 +145,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
 }
 
 
@@ -185,14 +185,17 @@ nav a{
 
 .tote-bags .image{
     flex: 1.5;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: antiquewhite;
     height: 100%;
     font-size: 5rem;
+    order: 1;
 }
 
 .tote-bags .text{
     flex: 1;
-    display: block;    
+    display: block;  
+    order: 2;  
 }
 
 .tote-bags .text h1{
@@ -255,8 +258,8 @@ nav a{
 }
 .tie-dye .image{
     flex: 1.5;
-    background-color: gray ;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: antiquewhite;
     height: 100%;
     font-size: 5rem;
     text-align: center;
@@ -406,62 +409,170 @@ nav a{
     line-height: 1.8rem;
 }
 
+/* Nav-Bar Responsiveness  */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: brown;
+}
+
 @media screen and (max-width: 780px) {
     body{
         overflow-x: hidden;
     }
     nav{
-        display: none;
+        position: relative;
+        height: 9vh;
     }
+    .logo{
+        width: 60%;
+    }
+    .logo img{
+        width: 100%;
+        /* background-color: red; */
+        object-fit: cover;
+        height: 100%;
+        top: 0;
+        left: -20px;
+    }
+    
+    /* -------------------- */
+    
+    .hamburger {
+        display: block;
+        margin-right: 15%;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .links{
+        /* display: none; */
+        position: absolute;
+        left: -100%;
+        top: 10vh;
+        /* flex-direction: column; */
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        transition: 0.3s;
+        background-color: brown;
+        display: block;
+        
+    }
+    .links.active{
+        left: 0;
+    }
+    .links div{
+        display: block;
+        margin-top: 11%;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+    
     .offer h1{
         font-size: 1.5rem;
         margin-left: 5%;
+        text-align: center;
     }
     .offer button{
         font-size: 16px;
         margin-right: 15%;
+        display: none;
     }
     #blue{
+        margin-top: 25%;
         font-size: 1.2rem;
+        /* text-align: center; */
+        
     }
     .sticky{
-        display: none;
+        /* display: none; */
+        width: 100vw;
+        margin: 0;
+        font-size: 16px;
+    }
+    .sticky  span{
+        display: block;
     }
     .tote-bags{
         flex: 1;
+        display: block;
+        margin-top: 15%;
     }
     .tote-bags .image{
-        display: none;
+        /* display: none; */
+        width: 100%;
+        min-height: 200px;
+        top: 10px;
+        
     }
     .tote-bags .text h1{
         font-size: 2rem;
+        text-align: center;
     }
     .tote-bags .text p{
         font-size: 1rem;
         line-height: 20px;
-        margin-left: 2%;
+        margin-left: 0;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+    
     .tote-btn{
         font-size: 1rem;
+        margin-top: 6%;
     }
 
     .tie-dye{
         flex: 1;
+        display: block;
+        margin-top: 20%;
+
     }
     .tie-dye .image{
-        display: none;
+        /* display: none; */
+        width: 100%;
+        min-height: 200px;
+        top: 10px;
     }
     .tie-dye .text h1{
         font-size: 2rem;
         white-space: normal;
+        text-align: center;
     }
     .tie-dye .text p{
         font-size: 1rem;
         line-height: 20px;
-        margin-left: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        text-align: center;
     }
+    .block-elem{
+        display: block;
+    } 
+    
     .tie-dye-btn{
         font-size: 1rem;
+        margin-top: 8%;
+
     }
     .contact-page{
         display: block;
@@ -473,7 +584,7 @@ nav a{
         margin-right: 0;
     }
     .we-offer{
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .we-offer h1{
         font-size: 1rem;
@@ -483,7 +594,10 @@ nav a{
         line-height: 1.5rem;
     }
     .connect{
-        margin-left: 5%;
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 100vw;
+        padding-bottom: 20px;
     }
     .connect h1{
         font-size: 1rem;
@@ -500,4 +614,5 @@ nav a{
         font-size: 14px;
         line-height: 1.2rem;
     }
+
 }

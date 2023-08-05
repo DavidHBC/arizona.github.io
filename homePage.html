@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   
@@ -13,30 +13,42 @@
    
     <nav>
         <div class="logo">
-            <img src="IMG-20230720-WA0008-removebg.png" alt="" style="width: 80%; height: 300%; position: relative;  top: -60px;">
+            <img src="./img/IMG-20230720-WA0008-removebg.png" alt="" >
         </div>
 
         <div class="links">
-            <div class="contact">
-                <a href="#contact-page"><li>CONTACT</li></a>
+            <div>
+                <a href="#contact-page">
+                    <li>
+                        <i class="fas fa-address-book" style="display: none;"></i>CONTACT
+                    </li>
+                </a>
             </div>
             <div>
-                <li>ABOUT</li>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-info-circle" style="display: none;" ></i> ABOUT
+                    </li>
+                </a>
             </div>
             <div>
-                <li>
-                    <a href="/user-profile">
-                        <i class="fas fa-user"></i>
-                    </a>
-                </li>
+                <a href="/user-profile">
+                    <i class="fas fa-user"></i>
+                    <li  style="display: none;" id="profile">PROFILE</li>
+                </a>
             </div>
             <div>
-                <li>
-                    <a href="/shopping-cart">
-                        <i class="fas fa-shopping-cart"></i> <!-- Font Awesome shopping cart icon -->
-                    </a>               
-                </li>
+                <a href="/shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <li style="display: none;" id="cart">CART</li>
+                </a>               
             </div>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>
 
@@ -49,99 +61,101 @@
                 <br>
                 
                 Complete Your Look with Eye-Catching Tote Bags in Endless Colors. <br>
-                Experience Fashion Uniquely  
+                Experience Fashion Uniquely! 
             </h1>
-
-            <a href="#blue">
-                <button>EXPLORE NOW</button>
-            </a>
+            <div class="explore-btn">
+                <a href="#blue">
+                    <button>EXPLORE NOW</button>
+                </a>
+            </div>
     </section>
 
     <div id="blue"><h1>Explore</h1></div>
 
     <section class="tote-bags" >
         
-            <div class="image">
-                
-            </div>
-
-            <div class="text">
-                <h1>
-                    Tote Bags
-                </h1>
-                <p>
+        
+        <div class="text">
+            <h1>
+                Tote Bags
+            </h1>
+            <p>
                     Step up your style with a custom tote <br> bag in your favorite colors and unique designs. Discover a world beyond the usual black bags. Select a tote bag that is as exceptional as you are.
                 </p>
-
-                <button class="tote-btn">SHOP NOW</button>
+                <div class="tote-btn-ctn">
+                    <button class="tote-btn">SHOP NOW</button>
+                </div>
             </div>
-
+            
+        <div class="image">
+            
+        </div>
         
-    </section>
+        </section>
 
-    <section class="tie-dye">
-        <div class="text">
+        <section class="tie-dye">
+            <div class="text">
             <h1>Why stop at only tote bags?</h1>
 
-            <p>Discover a world of amazing, colorful, and customized options, that showcases your individuality, making us your ultimate one-stop shop for stylish and personalized <span id="changing-word"></span><span id="blinking-cursor">|</span>
+            <p>Discover a world of amazing, colorful, and customized options, that showcases your individuality, making us your ultimate one-stop shop for stylish and personalized 
+                <span class="block-elem">
+                    <span id="changing-word"></span>
+                    <span id="blinking-cursor">|</span>
+                </span>
             </p>
 
             <button class = "tie-dye-btn">ORDER NOW</button>
         </div>
 
         <div class="image"></div>
-
-
-
     </section>
-
-
-
 
     <div class="sticky"><p>For custom printing please contact this number <span>+234-09-461-4000</span></p></div>
 
     <section class="contact-page" id="contact-page">
-        <h1>Jankara Clothings</h1>
+        <h1 >Jankara Clothings</h1>
 
-        <div class="we-offer">
-            <h1>We offer:</h1>
-            <ul class="we-offer-list">
-                <li>Tote Bags</li>
-                <li>Socks</li>
-                <li>Hoodies</li>
-                <li>T-shirts</li>
-                <li>Joggers</li>
-            </ul>
-        </div>
-
-        
-        <div class="connect">
-            <h1>Connect with us</h1>
-
-            <div class="social-icons">
-                <div class="facebook-icon">
-                    <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
-                </div>
-                <div class="instagram-icon">
-                    <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="twitter-icon">
-                    <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="linkedin-icon">
-                    <a href="https://www.linkedin.com/in/yourpage" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+        <!-- <div> -->
+            <div class="we-offer">
+                <h1>We offer:</h1>
+                <ul class="we-offer-list">
+                    <li>Tote Bags</li>
+                    <li>Socks</li>
+                    <li>Hoodies</li>
+                    <li>T-shirts</li>
+                    <li>Joggers</li>
+                </ul>
             </div>
 
-            <h2>Contact us</h2>
-            <p>
-                jankara_clothings@gmail.com <br>
-                +234-09-461-4000
+            
+            <div class="connect">
+                <h1>Connect with us</h1>
 
-            </p>
-        </div>
+                <div class="social-icons">
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="twitter-icon">
+                        <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/yourpage" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <h2>Contact us</h2>
+                <p>
+                    jankara_clothings@gmail.com <br>
+                    +234-09-461-4000
+
+                </p>
+            </div>
+        <!-- </div> -->
     </section>
 
-    <script src="anim.js"></script>
+    <script src="./js/anim.js"></script>
 </body>
 </html>
