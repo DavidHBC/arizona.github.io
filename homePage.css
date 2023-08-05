@@ -506,6 +506,7 @@ nav a{
         width: 100vw;
         margin: 0;
         font-size: 16px;
+        bottom: 0;
     }
     .sticky  span{
         display: block;
