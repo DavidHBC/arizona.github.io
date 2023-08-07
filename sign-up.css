@@ -234,7 +234,9 @@ body {
         height: 1.5rem;
         border-radius: 8px;
     }
-    
+    #lname, #password-container{
+        margin-top: 10%;
+    }
     .sign-in{
         width: 100vw;
     }
